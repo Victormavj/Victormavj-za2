@@ -1,1 +1,84 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+#header {
+    width: 100%;
+    background-color: lightblue;
+    padding: 15px 0;
+}
+
+.content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    vertical-align: middle;
+}
+
+#header h1 {
+    display: inline-block;
+    margin-left: 15px;
+    vertical-align: middle;
+}
+
+.menu {
+    max-width: 960px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: lightgray;
+}
+
+.menu a {
+    margin-right: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+tr.odd {
+    background-color: white;
+}
+
+tr.even {
+    background-color: #eeeeee;
+}
+
+input, select, textarea {
+    margin-top: 5px;
+}
+
+textarea {
+    width: 300px;
+    height: 80px;
+}
+
+#footer {
+    width: 100%;
+    margin-top: 30px;
+    padding: 15px 0;
+    background-color: lightblue;
+}
+
+@media (max-width: 980px) {
+    .content, .menu {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
 
