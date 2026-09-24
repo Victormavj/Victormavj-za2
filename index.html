@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="content">
+            <img class="logo" src="image.png" alt="Логотип">
+            <h1>Мой учебный сайт</h1>
+        </div>
+    </header>
+
+    <nav class="menu">
+        <a href="index.html">Главная</a>
+        <a href="zadanie-1.html">Задание 1</a>
+        <a href="#table">Таблица</a>
+        <a href="#form">Форма</a>
+    </nav>
+
+    <main class="content">
+        <h2>Задание 2</h2>
+        <p>Это моя страница для практической работы по HTML.</p>
+
+        <h2 id="table">Таблица</h2>
+        <table>
+            <tr>
+                <th>Предмет</th>
+                <th>Понедельник</th>
+                <th>Вторник</th>
+                <th>Аудитория</th>
+            </tr>
+            <tr class="odd">
+                <td rowspan="2">HTML</td>
+                <td>Лекция</td>
+                <td>Практика</td>
+                <td>101</td>
+            </tr>
+            <tr class="odd">
+                <td>Практика</td>
+                <td>Самостоятельно</td>
+                <td>102</td>
+            </tr>
+            <tr class="even">
+                <td>Математика</td>
+                <td>Лекция</td>
+                <td>Практика</td>
+                <td>205</td>
+            </tr>
+            <tr class="odd">
+                <td>История</td>
+                <td colspan="2">Лекция</td>
+                <td>310</td>
+            </tr>
+            <tr class="even">
+                <td>Английский</td>
+                <td>Практика</td>
+                <td>Практика</td>
+                <td>208</td>
+            </tr>
+            <tr class="odd">
+                <td>Физкультура</td>
+                <td>Занятие</td>
+                <td>Занятие</td>
+                <td>Зал</td>
+            </tr>
+        </table>
+
+        <h2>Ссылка на первое задание</h2>
+        <p><a href="https://github.com/Victormavj/victomavj.github.io">Моё задание 1 на GitHub</a></p>
+
+        <h2 id="form">Форма из задания 1</h2>
+        <form action="#" method="post">
+            <p>ФИО:<br><input type="text" name="fio"></p>
+            <p>Телефон:<br><input type="tel" name="phone"></p>
+            <p>E-mail:<br><input type="email" name="email"></p>
+            <p>Дата рождения:<br><input type="date" name="birthdate"></p>
+            <p>Пол:<br>
+                <input type="radio" name="gender" value="female"> Женский<br>
+                <input type="radio" name="gender" value="male"> Мужской
+            </p>
+            <p>Любимый язык программирования:<br>
+                <select name="languages[]" multiple>
+                    <option>Pascal</option>
+                    <option>C</option>
+                    <option>C++</option>
+                    <option>JavaScript</option>
+                    <option>PHP</option>
+                    <option>Python</option>
+                    <option>Java</option>
+                    <option>Haskel</option>
+                    <option>Clojure</option>
+                    <option>Prolog</option>
+                    <option>Scala</option>
+                </select>
+            </p>
+            <p>Биография:<br><textarea name="biography"></textarea></p>
+            <p><input type="checkbox" name="contract"> С контрактом ознакомлен(а)</p>
+            <p><input type="submit" value="Сохранить"></p>
+        </form>
+    </main>
+
+    <footer id="footer">
+        <div class="content">Виктор Д. Мачака Аррайя>
+    </footer>
+</body>
+</html>
 
